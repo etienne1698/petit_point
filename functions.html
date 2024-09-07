@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    <input id="input1" />
+    <input id="input2" />
+    <input id="input3" />
+
+    <script>
+        // --- LES DIFFERENTE FACON DE DEFINIR UNE FONCTiON ---
+
+        // ----------------------------------------------
+        function onInput1Change(e) {
+            console.error('input1', e.target.value)
+        }
+        document.getElementById('input1').addEventListener('input', onInput1Change)
+        
+        // ----------------------------------------------
+
+        document.getElementById('input2').addEventListener('input', (event) => {
+            console.error('input2', event.target.value)
+        })
+
+        // ----------------------------------------------
+
+        const onInput3Change = (event) => {
+            console.error('input3', event.target.value)
+        } 
+        document.getElementById('input3').addEventListener('input', onInput3Change)
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>
