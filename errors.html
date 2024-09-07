@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function division(a, b) {
+            if (b === 0) {
+                throw new Error('Pas de division par 0')
+            } else {
+                return a / b
+            }
+        }
+
+        try {
+            console.log(division(1, 0))
+        } catch(error) {
+            console.log('IL Y A EU UNE ERREUR')
+        }
+
+
+        try {
+            console.log(division(14, 12))
+        } catch(error) {
+            console.log('IL Y A EU UNE ERREUR 2')
+        }
+    </script>
+</body>
+</html>
